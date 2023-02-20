@@ -1,5 +1,5 @@
 import React from "react";
-import './ButtonsPanel.css';
+import './ButtonsPanel.css'; 
 
 function ButtonsPanel(props) {
     return(
@@ -7,7 +7,7 @@ function ButtonsPanel(props) {
             <button onClick={() => {
                 //console.log('add clicked')
                 props.buttonMethod('add');
-            }}>Add 1</button>
+            }}>Add {props.stepValue}</button>
             <button onClick={() => {
                 props.buttonMethod('reinit');
             }}>ReInit</button>
