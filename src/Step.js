@@ -9,6 +9,7 @@ class Step extends Component {
                 <span>
                     Krok:
                 </span>
+                {/* przekazanie info przez e */}
                 <input type="number" defaultValue='1' onChange={(e)=>{this.props.updateStep(e.target.value)}}/>
             </div>
         );

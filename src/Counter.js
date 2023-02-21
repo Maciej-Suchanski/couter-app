@@ -19,6 +19,7 @@ class Counter extends Component {
         };
     }
 
+    //to nadaje state z dziecka 
     changeStepValue = (value) => {
         console.log(value);
         this.setState({
@@ -91,7 +92,7 @@ class Counter extends Component {
                 {/*       <button onClick={this.changeValue}>
                     Add 1
                 </button> */}
-                <ButtonsPanel buttonMethod={this.changeValue} stepValue={this.state.stepValue}/>
+                <ButtonsPanel buttonMethod={this.changeValue} stepValue={this.state.stepValue}/>{/* to przekazuje do dziecka przez state do props */}
                 <Step updateStep={this.changeStepValue} />
                 {clockElement}
             </div>
